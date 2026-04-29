@@ -9,6 +9,7 @@ To see what the page looks like currently:
 1.  Open your Terminal (or Command Prompt).
 2.  Navigate to the project folder.
 3.  Type the following command:
+
     ```bash
     npm start
     ```
