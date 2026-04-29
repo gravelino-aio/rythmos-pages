@@ -1,0 +1,16 @@
+{
+  "name": "rythmos-data-sheets",
+  "version": "1.0.0",
+  "description": "Technical data sheets template for Rythmos devices",
+  "main": "template.html",
+  "scripts": {
+    "start": "npx serve .",
+    "generate": "node generate.js"
+  },
+  "keywords": [],
+  "author": "Antigravity",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
