@@ -307,12 +307,24 @@
             const page = document.querySelector('.page');
             const footer = document.querySelector('.footer');
             if (page && footer) {
-                const footerBottom = footer.offsetTop + footer.offsetHeight;
-                page.style.height = footerBottom + 'px';
+                const pageRect = page.getBoundingClientRect();
+                const footerRect = footer.getBoundingClientRect();
+                const footerBottomRelative = (footerRect.bottom / scale) - (pageRect.top / scale);
+
+                page.style.height = (footerBottomRelative + 1) + 'px';
             }
         }
 
-        scalePage();
+        const resizeObserver = new ResizeObserver(() => {
+            scalePage();
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            scalePage();
+            const page = document.querySelector('.page');
+            if (page) resizeObserver.observe(page);
+        });
+
         window.addEventListener('resize', scalePage);
         window.addEventListener('load', scalePage);
     </script>
