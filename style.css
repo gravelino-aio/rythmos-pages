@@ -30,6 +30,16 @@ body {
     overflow-x: hidden;
 }
 
+.hero-bg-img {
+    position: absolute;
+    width: 1440px;
+    height: 1024px;
+    top: 206px;
+    left: 154px;
+    z-index: 0;
+    pointer-events: none;
+}
+
 .hero-main-container {
     position: absolute;
     width: 790px;
