@@ -301,7 +301,7 @@
     </div>
     <script>
         function scalePage() {
-            const scale = Math.min(1, window.innerWidth / 1920);
+            const scale = window.innerWidth / 1920;
             document.body.style.zoom = scale;
 
             const page = document.querySelector('.page');
