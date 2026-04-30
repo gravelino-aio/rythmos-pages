@@ -303,10 +303,18 @@
         function scalePage() {
             const scale = Math.min(1, window.innerWidth / 1920);
             document.body.style.zoom = scale;
+
+            const page = document.querySelector('.page');
+            const footer = document.querySelector('.footer');
+            if (page && footer) {
+                const footerBottom = footer.offsetTop + footer.offsetHeight;
+                page.style.height = footerBottom + 'px';
+            }
         }
 
         scalePage();
         window.addEventListener('resize', scalePage);
+        window.addEventListener('load', scalePage);
     </script>
 </body>
 
