@@ -1,10 +1,2584 @@
 [
-  {
-    "id": "anchor-type-f",
-    "title": "Anchor <span>Type F</span>",
-    "specs_rev": "Rev 2026",
-    "overview": "The Rythmos® Anchor Type F is a USB-C powered ambient sensing mesh network node...",
-    "dimensions": "76.5 × 74.2 × 29.0 mm",
-    "weight": "75 g"
-  }
+    {
+        "id": "anchor-type-f",
+        "folder": "Anchor Type F",
+        "title": "Rythmos® Anchor",
+        "subtitle": "Type F",
+        "ref": "Technical Specification · Rev 2026",
+        "heroIcons": [
+            "<strong>Collects location data</strong> from <strong>Rythmos®</strong> wearables",
+            "<strong>Relays alert events</strong> across network",
+            "<strong>Maintains</strong> mesh connectivity",
+            "<strong>Supports integrated environmental</strong> sensing"
+        ],
+        "detectionCapabilities": [
+            "Sound level",
+            "Ambient light",
+            "Barometric pressure",
+            "Humidity",
+            "Temperature"
+        ],
+        "heroDescription": "The <span class=\"highlight\">Rythmos® Anchor Type F</span> is a <span class=\"highlight-orange\">USB-C powered</span> ambient sensing mesh network node designed for healthcare and senior living environments. It contributes real-time resident location data and passes through alert information while simultaneously collecting environmental data — including temperature, humidity, barometric pressure, ambient light, and sound level — all through a single compact, wallmounted unit that integrates directly into the Rythmos® mesh infrastructure",
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "76.5 × 74.2 × 29.0 mm"
+            },
+            {
+                "label": "Weight:",
+                "value": "75 g"
+            },
+            {
+                "label": "Power Source:",
+                "value": "USB-C (wired)"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos® Mesh Network · Wirepas 2.4 GHz based"
+            },
+            {
+                "label": "IC / Chipset:",
+                "value": "Nordic Semiconductor nRF52832"
+            },
+            {
+                "label": "Antenna:",
+                "value": "Embedded pattern antenna"
+            },
+            {
+                "label": "Transmit Power:",
+                "value": "+4 dBm max"
+            },
+            {
+                "label": "Operating Temperature:",
+                "value": "−20°C to +60°C"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "IP65 — dust & water resistant"
+            },
+            {
+                "label": "LED Indicator:",
+                "value": "Status LED (onboard)"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air (OTA)"
+            },
+            {
+                "label": "Management Portal:",
+                "value": "Rythmos® Care Manager (web + mobile)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Fixed position — must not be relocated"
+            },
+            {
+                "label": "Certifications:",
+                "value": "FCC · ISED · CE"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Resident Location",
+                "desc": "Real-time location via mesh"
+            },
+            {
+                "name": "Alert Routing",
+                "desc": "Nurse call, fall & wander events"
+            },
+            {
+                "name": "Mesh Node",
+                "desc": "Self-healing mesh infrastructure"
+            },
+            {
+                "name": "Data Collection",
+                "desc": "24/7 environmental sensing"
+            },
+            {
+                "name": "Temperature Check",
+                "desc": "Continuous ambient monitoring"
+            },
+            {
+                "name": "Humidity Check",
+                "desc": "Relative humidity monitoring"
+            }
+        ],
+        "networkFeatures": [
+            "Forms a self-healing wireless mesh network throughout the community",
+            "Over-the-air firmware updates — no on-site servicing required for software",
+            "Passes through nurse alert, fall, and wander event data in real time",
+            "Works in concert with Rythmos® Gateway to aggregate and transmit data",
+            "Feeds centralized Rythmos® Care Manager web portal and mobile app",
+            "Supports tiered event routing to appropriate care staff by zone",
+            "Collects data wirelessly from Rythmos® wearables in range"
+        ],
+        "deploymentTip": "Install anchors throughout corridors, common areas, and near exits. Anchor density directly affects location accuracy — Intrex recommends placement every 30 ft in typical senior living corridors. Install at least 1 anchor in every room, and multiple in high-occupancy areas such as dining rooms. Anchors must remain fixed post-calibration; repositioning requires recalibration via the Rythmos® Care Manager portal.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "-Install in fixed location\n-Do not relocate after calibration"
+            },
+            {
+                "title": "Coverage Density",
+                "content": "-Corridors: 30–50 ft spacing\n-Increase density in shared areas"
+            },
+            {
+                "title": "Mounting",
+                "content": "-Screw mount (recommended)\n-Adhesive mount (surface-sensitive)"
+            },
+            {
+                "title": "Mounting Surfaces",
+                "content": "-Wall, Ceiling\n-Pillar"
+            },
+            {
+                "title": "Power Routing",
+                "content": "-USB-C cable required\n-Nearest power source needed"
+            },
+            {
+                "title": "Bracket Installation",
+                "content": "-Use detachable bracket\n-Ensure secure attachment"
+            }
+        ]
+    },
+    {
+        "id": "anchor-type-c",
+        "folder": "Anchor Type C",
+        "title": "Rythmos® Anchor",
+        "subtitle": "Type C",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroIcons": [
+            "Collects <span class=\"highlight-orange\">location</span> data from <strong>Rythmos®</strong> wearables",
+            "Relays <strong>alert events</strong> across network",
+            "<strong>Maintains</strong> mesh connectivity"
+        ],
+        "detectionCapabilities": [
+            "Real-time location",
+            "Alert routing",
+            "Mesh connectivity",
+            "Outdoor capable"
+        ],
+        "heroDescription": "Rythmos® Anchor Type C is a battery-powered <span class=\"highlight-orange\">mesh node</span> used to support resident positioning and alert routing. It collects location data from wearables and relays information to the Gateway.",
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "65 × 40 × 15 mm"
+            },
+            {
+                "label": "Weight:",
+                "value": "35 g"
+            },
+            {
+                "label": "Power Source:",
+                "value": "CR2477 (Replaceable coin cells)"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos® Mesh Network · Wirepas 2.4 GHz based"
+            },
+            {
+                "label": "IC / Chipset:",
+                "value": "Nordic Semiconductor nRF52832"
+            },
+            {
+                "label": "Antenna:",
+                "value": "Internal omnidirectional antenna"
+            },
+            {
+                "label": "Transmit Power:",
+                "value": "+4 dBm max"
+            },
+            {
+                "label": "Operating Temperature:",
+                "value": "-40°C to +85°C"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "IP68 — sealed, dust & water resistant"
+            },
+            {
+                "label": "LED Indicator:",
+                "value": "Status LED (onboard)"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air (OTA)"
+            },
+            {
+                "label": "Management Portal:",
+                "value": "Rythmos® Care Manager (web + mobile)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Fixed position — must not be relocated"
+            },
+            {
+                "label": "Certifications:",
+                "value": "FCC · ISED · CE"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Resident Location",
+                "desc": "Real-time location via mesh"
+            },
+            {
+                "name": "Alert Routing",
+                "desc": "Nurse call, fall & wander events"
+            },
+            {
+                "name": "Mesh Node",
+                "desc": "Self-healing mesh infrastructure"
+            },
+            {
+                "name": "Data Collection",
+                "desc": "Centralized event data in Rythmos®"
+            },
+            {
+                "name": "Wander Support",
+                "desc": "Supports elopement detection zones"
+            },
+            {
+                "name": "Outdoor Installation",
+                "desc": "Mesh coverage in outdoor spaces"
+            }
+        ],
+        "networkFeatures": [
+            "Forms a self-healing wireless mesh network throughout the community",
+            "Over-the-air firmware updates — no on-site servicing required for software",
+            "Passes through nurse alert, fall, and wander event data in real time",
+            "Works in concert with Rythmos® Gateway to aggregate and transmit data",
+            "Feeds centralized Rythmos® Care Manager web portal and mobile app"
+        ],
+        "deploymentTip": "Install anchors throughout corridors, common areas, and near exits to ensure full mesh coverage. Anchor density directly affects location accuracy — Intrex recommends placement every 30 ft in typical senior living corridors. Install at least 1 anchor in every room, and multiple anchors in rooms where many people congregate, such as dining rooms. Anchors must remain fixed post-calibration; repositioning requires recalibration via the Rythmos® Care Manager portal.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "-Install in fixed location\n-Do not relocate after calibration"
+            },
+            {
+                "title": "Coverage Density",
+                "content": "-Corridors: 30 ft spacing\n-Increase density in shared areas"
+            },
+            {
+                "title": "Mounting",
+                "content": "-Double-sided tape (tool-free)\n-Screw mount (permanent)"
+            },
+            {
+                "title": "Battery",
+                "content": "-2 × CR2477 coin cells\n-Requires no reconfiguration"
+            },
+            {
+                "title": "Power",
+                "content": "-Battery powered\n-No wiring required"
+            },
+            {
+                "title": "Identification",
+                "content": "-Unique ID per device\n-QR code label for provisioning"
+            }
+        ]
+    },
+    {
+        "id": "gateway",
+        "folder": "Gateway",
+        "title": "Rythmos®",
+        "subtitle": "Gateway",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Gateway central hub for Rythmos® system connectivity, data aggregation, and cloud integration.",
+        "heroIcons": [
+            "Provides <strong>real-time resident location</strong> data",
+            "Routes alert events to <span class=\"highlight-orange\">Care Manager</span>",
+            "Connects system to <strong>cloud platform</strong>"
+        ],
+        "detectionCapabilities": [
+            "Mesh Hub",
+            "Redundancy",
+            "Alert Routing",
+            "Cloud Bridge"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "65 × 40 × 15 mm"
+            },
+            {
+                "label": "Network Connection:",
+                "value": "Wired LAN (Ethernet), WiFi"
+            },
+            {
+                "label": "Power Source:",
+                "value": "5.1V / 3.5A USB-C adapter"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos® Mesh Network · Wirepas 2.4 GHz based"
+            },
+            {
+                "label": "Ports:",
+                "value": "USB, Ethernet"
+            },
+            {
+                "label": "Compute:",
+                "value": "Raspberry Pi 5 / CM5"
+            },
+            {
+                "label": "Memory:",
+                "value": "8GB – 16GB LPDDR4X"
+            },
+            {
+                "label": "Input:",
+                "value": "Full-size 105-key keyboard, trackpad"
+            },
+            {
+                "label": "AV & Cam:",
+                "value": "2MP USB Camera + Mic, speakers"
+            },
+            {
+                "label": "Enclosure:",
+                "value": "CNC aluminum"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air (OTA)"
+            },
+            {
+                "label": "Management Portal:",
+                "value": "Rythmos® Care Manager (web + mobile)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Indoor, fixed location"
+            },
+            {
+                "label": "Certifications:",
+                "value": "FCC · ISED · CE"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Mesh Hub",
+                "desc": "Centralized device data aggregation"
+            },
+            {
+                "name": "Multi-Gateway Support",
+                "desc": "Automatic multi-gateway redundancy"
+            },
+            {
+                "name": "Alert Routing",
+                "desc": "Instant caregiver alert delivery"
+            },
+            {
+                "name": "Cloud Bridge",
+                "desc": "Data streaming to care platform"
+            },
+            {
+                "name": "OTA Updates",
+                "desc": "Remote firmware updates"
+            },
+            {
+                "name": "Redundant Connectivity",
+                "desc": "Ethernet, WiFi & cellular failover"
+            }
+        ],
+        "networkFeatures": [
+            "Central hub for the Rythmos® wireless mesh network",
+            "Wireless data collection from wearables and anchors",
+            "Supports in-community resident real-time location tracking",
+            "Over-the-air firmware updates — no on-site service required",
+            "Feeds data to the Rythmos® Care Manager web portal and mobile app",
+            "Multiple gateways supported — automatic redundancy and expanded coverage"
+        ],
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "-Install in fixed indoor location\n-Do not relocate after setup"
+            },
+            {
+                "title": "Positioning",
+                "content": "-Place with coverage area\n-Avoid enclosed locations"
+            },
+            {
+                "title": "Cellular Setup",
+                "content": "-Connect cellular modem\n-Enable automatic failover"
+            },
+            {
+                "title": "Network (Ethernet)",
+                "content": "-Connect to facility LAN\n-Primary system connection"
+            },
+            {
+                "title": "Power",
+                "content": "-Connect via USB-C adapter\n-UPS backup recommended"
+            },
+            {
+                "title": "Power Verification",
+                "content": "-Confirm LEDs are active\n-Devices should power on instantly"
+            },
+            {
+                "title": "System Status",
+                "content": "-Wait for startup\n-Verify gateway is online"
+            },
+            {
+                "title": "Anchor Setup",
+                "content": "-Install anchor 1 ft from gateway\n-Ensure proper mesh initialization"
+            },
+            {
+                "title": "Coverage Setup",
+                "content": "-Install anchors throughout area\n-Increase density where needed"
+            },
+            {
+                "title": "Validation",
+                "content": "-Confirm connectivity and signal\n-Verify data in Care Manager"
+            }
+        ]
+    },
+    {
+        "id": "high-accuracy-radar",
+        "folder": "High Accuracy Radar",
+        "title": "Rythmos®",
+        "subtitle": "High Accuracy Radar Sensor",
+        "ref": "Technical Specification & Installation Reference · Rev 2026 · USB-C Powered Configuration",
+        "heroDescription": "Rythmos® High Accuracy Radar Sensor is a <span class=\"highlight-orange\">wireless sensor</span> for in-apartment fall detection to deliver high accuracy real-time alerts via Care Manager.",
+        "heroIcons": [
+            "Delivers <span class=\"highlight-orange\">near-perfect</span> fall detection accuracy",
+            "Provides <strong>instant caregiver notification</strong>",
+            "Reduces false alarms <span class=\"highlight-orange\">by 98.3%</span>"
+        ],
+        "detectionCapabilities": [
+            "Fall Detection",
+            "Breathing Monitoring",
+            "Rest Quality",
+            "Behavioral Insights"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "106 x 68 x 78 mm"
+            },
+            {
+                "label": "Field of View:",
+                "value": "120°"
+            },
+            {
+                "label": "Coverage Area:",
+                "value": "6 m x 6 m"
+            },
+            {
+                "label": "Network:",
+                "value": "WiFi Connectivity"
+            },
+            {
+                "label": "False Alarm Reduction:",
+                "value": "98.3%"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air (OTA)"
+            },
+            {
+                "label": "Radar Frequency:",
+                "value": "60 GHz"
+            },
+            {
+                "label": "Elevation:",
+                "value": "60°"
+            },
+            {
+                "label": "Power Source:",
+                "value": "5V DC Micro USB (cable included)"
+            },
+            {
+                "label": "Fall Detection Accuracy:",
+                "value": "~100%"
+            },
+            {
+                "label": "Indicator:",
+                "value": "LED light indicator"
+            },
+            {
+                "label": "Installation:",
+                "value": "Indoor, corner mount"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Fall Detection",
+                "desc": "Accuracy for standing, sitting, and lying"
+            },
+            {
+                "name": "Breathing Monitoring",
+                "desc": "Subtle respiration detection"
+            },
+            {
+                "name": "Real-Time Alerts",
+                "desc": "Instant notifications via app"
+            },
+            {
+                "name": "Behavioral Insights",
+                "desc": "Activity data for early intervention"
+            },
+            {
+                "name": "Rest Quality",
+                "desc": "Monitoring of stillness and sleep quality"
+            },
+            {
+                "name": "App Integration",
+                "desc": "Feeds the centralized CM platform"
+            }
+        ],
+        "networkFeatures": [
+            "Fall Detection Accuracy: Near-100% accuracy for standing, sitting, lying, and sudden drops",
+            "Machine Learning: Algorithms continuously improve detection over time",
+            "False Alarm Reduction: 98.3% reduction versus traditional PIR or camera-based systems",
+            "Field of View: 120° horizontal field of view with 60° elevation angle",
+            "Micro-movement Monitoring: Accuracy down to 0.2 mm for breathing rate, stillness, and rest quality",
+            "Coverage Area: Up to 6 m x 6 m per unit, suitable for standard senior living apartments"
+        ],
+        "deploymentTip": "Mount the Radar Sensor in a corner of the room, near the ceiling, for optimal 6 m x 6 m coverage across the space. Corner mounting maximizes the 120° FOV to cover the full room from a single unit. The 60° elevation angle ensures complete floor-level detection for fall events. For rooms larger than 6 m x 6 m, use multiple sensors with overlapping coverage zones. The sensor is privacy-safe—no camera, no images, no video at any time.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Corner mount at ceiling height for full 6 m x 6 m coverage."
+            },
+            {
+                "title": "Coverage Density",
+                "content": "- Standard senior apartments typically require a single unit"
+            },
+            {
+                "title": "Power Routing",
+                "content": "- Powered via Micro USB 5V DC; nearest power source required"
+            },
+            {
+                "title": "Privacy & Compliance",
+                "content": "- Fully privacy-safe for residents; OTA updates managed via the portal"
+            }
+        ]
+    },
+    {
+        "id": "kallos-wearable",
+        "folder": "Kallos Wearable",
+        "title": "Rythmos®",
+        "subtitle": "Kallos Wearable",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Kallos Wearable is a <span class=\"highlight-orange\">smartwatch-style resident wearable</span> delivers real-time indoor location tracking, automatic fall monitoring, integrated nurse call, 2-way audio communication, and wander management.",
+        "heroIcons": [
+            "<strong>Resident Safety</strong> Tracking",
+            "Provides <strong>instant caregiver notification</strong>",
+            "<strong>2-way communication</strong> with caregiver"
+        ],
+        "detectionCapabilities": [
+            "Real-Time Location",
+            "Fall Monitoring",
+            "Nurse Call Button",
+            "Wander Management",
+            "Access Control"
+        ],
+        "topologyLayout": "kallos",
+        "topologyItems": [
+            {
+                "image": "system-topology-image1.png",
+                "text": "Standard wrist band included. Adjustable to fit most wrist sizes. Available in multiple colours. Suitable for daily wear including showering"
+            },
+            {
+                "image": "system-topology-image2.png",
+                "text": "Lanyard attachment allows the <strong>Kallos</strong> to be worn around the neck. Ideal for residents who prefer not to wear a wrist band."
+            },
+            {
+                "image": "system-topology-image3.png",
+                "text": "The <strong>Kallos</strong> integrates with the full Rythmos® ecosystem — Access + Wander Readers, Anchor mesh network, Gateway, and Care Manager — for centralized resident monitoring."
+            }
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "45 x 38 x 12 mm"
+            },
+            {
+                "label": "Display:",
+                "value": "Color touchscreen"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 1 month usage dependent"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "IP67 Waterproof and shower safe"
+            },
+            {
+                "label": "Feedback:",
+                "value": "Haptic and Visual LED indicators"
+            },
+            {
+                "label": "Indoor Positioning:",
+                "value": "Rythmos Mesh Network with 3 m accuracy"
+            },
+            {
+                "label": "Communication:",
+                "value": "2-way staff resident"
+            },
+            {
+                "label": "Power Source:",
+                "value": "Rechargeable battery"
+            },
+            {
+                "label": "Buttons:",
+                "value": "Force touch display and Side button"
+            },
+            {
+                "label": "Charge Time:",
+                "value": "Approximately 2 hours from 0 to 100 percent"
+            },
+            {
+                "label": "Wear Styles:",
+                "value": "Wrist or neck worn"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos Mesh Network Wirepas 2.4 GHz based"
+            },
+            {
+                "label": "Outdoor Positioning:",
+                "value": "GPS-LTE"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air OTA"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Real-Time Location",
+                "desc": "Indoor & outdoor"
+            },
+            {
+                "name": "Nurse Call",
+                "desc": "One-press alert"
+            },
+            {
+                "name": "Fall Monitoring",
+                "desc": "ML-based detection"
+            },
+            {
+                "name": "Wander Management",
+                "desc": "Zone-based alerts"
+            },
+            {
+                "name": "Access Control",
+                "desc": "Proximity unlock"
+            },
+            {
+                "name": "2-Way Comms",
+                "desc": "VoLTE communication"
+            }
+        ],
+        "safetyCareFeatures": [
+            "Integrated nurse call button: For immediate caregiver alerts",
+            "GPS-LTE outdoor tracking: For residents outside the community. Minute-by-minute location data",
+            "Automatic fall monitoring: Via machine learning algorithms. Detects and sends alerts to staff in real time.",
+            "Elopement protection: Via customizable wander management tiers. Works with Rythmos® Access + Wander Readers at exits.",
+            "Real-time indoor location: Faster caregiver response. Powered by Rythmos® mesh network anchors.",
+            "Centralized alerts: Managed through Rythmos® Care Manager.",
+            "2-way communication: Between staff and residents"
+        ],
+        "installation": [
+            {
+                "title": "Standard Wrist Band",
+                "content": "Adjustable band available in multiple colors; suitable for daily wear and showering."
+            },
+            {
+                "title": "Neck / Lanyard Wear",
+                "content": "Ideal for residents who prefer not to wear a wrist band"
+            },
+            {
+                "title": "Secure Locking Band (Optional)",
+                "content": "Difficult-to-remove design for at-risk residents; includes a magnetic key"
+            },
+            {
+                "title": "Rechargeable",
+                "content": "Internal battery with no replacement required."
+            },
+            {
+                "title": "Zero On-site Servicing",
+                "content": "All software updates are managed remotely via the portal."
+            },
+            {
+                "title": "Cleaning",
+                "content": "Device is fully safe for bath, spa, and disinfection protocols"
+            }
+        ]
+    },
+    {
+        "id": "motion-light-switch",
+        "folder": "Motion Light Switch",
+        "title": "Rythmos®",
+        "subtitle": "Motion Light Switch",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Motion Light Switch is a <span class=\"highlight-orange\">passive infrared (PIR) motion sensor</span> designed for occupancy and vacancy-based lighting control. Featuring integrated Rythmos Mesh Network connectivity, it delivers reliable motion-triggered load control in a compact wall-switch form factor.",
+        "heroIcons": [
+            "<strong>Provides</strong> motion-triggered lighting control",
+            "<strong>Supports</strong> occupancy and vacancy sensor modes",
+            "<strong>Relays</strong> wireless signals across the mesh network",
+            "<strong>Allows</strong> for adjustable time delays"
+        ],
+        "detectionCapabilities": [
+            "Motion Detection",
+            "Occupancy Tracking",
+            "Vacancy Monitoring",
+            "Light Control"
+        ],
+        "topologyLayout": "colors",
+        "colors": [
+            { "name": "White", "image": "system-topology-image1.png" },
+            { "name": "Ivory", "image": "system-topology-image2.png" },
+            { "name": "Light Almond", "image": "system-topology-image3.png" }
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "105 x 44.47 x 25 mm"
+            },
+            {
+                "label": "Input Power:",
+                "value": "120-277V AC, 50/60Hz"
+            },
+            {
+                "label": "Max Output LED/Electronic Ballast:",
+                "value": "300W at 120V / 600W at 277V"
+            },
+            {
+                "label": "Max Output Tungsten/Incandescent:",
+                "value": "600W at 120V / 1200W at 277V"
+            },
+            {
+                "label": "Max Output Motor:",
+                "value": "1/2 hp at 120V"
+            },
+            {
+                "label": "Detection Angle:",
+                "value": "180 degrees"
+            },
+            {
+                "label": "Detection Range:",
+                "value": "Up to 30ft (9m)"
+            },
+            {
+                "label": "Mounting Height:",
+                "value": "Up to 4ft"
+            },
+            {
+                "label": "Operating Temperature:",
+                "value": "32-104 F (0-40 C)"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos Mesh Network Wirepas 2.4 GHz based"
+            },
+            {
+                "label": "Mesh Network Range:",
+                "value": "100ft (30m) typical"
+            },
+            {
+                "label": "Suitable For:",
+                "value": "Indoors only"
+            },
+            {
+                "label": "Warranty:",
+                "value": "5 years"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air OTA"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Fall Prevention",
+                "desc": "Lighting reduces nighttime fall risk"
+            },
+            {
+                "name": "Hands-Free Operation",
+                "desc": "No need to use manual switches"
+            },
+            {
+                "name": "Energy Efficiency",
+                "desc": "Lights off in empty rooms"
+            },
+            {
+                "name": "Mesh Support",
+                "desc": "Extends Rythmos network coverage"
+            },
+            {
+                "name": "Certified Reliability",
+                "desc": "UL listed for healthcare environments"
+            },
+            {
+                "name": "Easy Installation",
+                "desc": "Fits standard wall boxes for fast deployment"
+            }
+        ],
+        "systemFeatures": [
+            "On-board antenna: Integrated antenna for seamless mesh network connectivity",
+            "LED motion indicator: Local visual feedback for motion detection",
+            "Adjustable time delay: Customizable timing for occupancy and vacancy modes.",
+            "Button reset: Quick device reset by holding the button for 5 seconds",
+            "Wide Compatibility: Works with standard ballast, LED, and incandescent loads",
+            "5-year warranty: Long-term reliability with a comprehensive 5-year warranty"
+        ],
+        "installation": [
+            {
+                "title": "Mounting",
+                "content": "Installs in a standard single-gang wall box at a height of up to 4ft"
+            },
+            {
+                "title": "Setup",
+                "content": "Ensure the Fresnel lens remains unobstructed for optimal detection"
+            },
+            {
+                "title": "Wiring Guide",
+                "content": "• Black Wire: Connect to Hot/Live\n• White Wire: Connect to Neutral\n• Bare Wire: Connect to Ground\n• Red Wire: Connect to Load"
+            },
+            {
+                "title": "Reset",
+                "content": "Hold the button for 5 seconds to reset the device settings"
+            },
+            {
+                "title": "Colors",
+                "content": "Available in White, Ivory, and Light Almond"
+            }
+        ]
+    },
+    {
+        "id": "pull-cord",
+        "folder": "Pull Cord",
+        "title": "Rythmos®",
+        "subtitle": "Pull Cord",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Pull Cord is <span class=\"highlight-orange\">Battery-powered nurse call device</span> that enables residents to initiate alerts by pull cord or lever, providing immediate caregiver notification.",
+        "heroIcons": [
+            "<strong>Triggers alert</strong> events via pull cord or lever",
+            "<strong>Sends alerts</strong> through Rythmos® mesh network to caregivers",
+            "Provides <strong>LED confirmation</strong> that alert was sent"
+        ],
+        "detectionCapabilities": [
+            "Manual alerts",
+            "Emergency events",
+            "Bath/Spa safe"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "110 × 70 × 45 mm"
+            },
+            {
+                "label": "Power Source:",
+                "value": "2 × AA batteries"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 5 years"
+            },
+            {
+                "label": "Mesh Network Protocol:",
+                "value": "Rythmos® Mesh Network · Wirepas 2.4 GHz"
+            },
+            {
+                "label": "Alert Indicator:",
+                "value": "LED visual indicator"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "Bath & spa safe"
+            },
+            {
+                "label": "Installation:",
+                "value": "Surface mount · Tape · Single gang box"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA (over-the-air)"
+            },
+            {
+                "label": "Management:",
+                "value": "Care Manager (web + mobile)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Nurse Call",
+                "desc": "Instant caregiver alert on pull"
+            },
+            {
+                "name": "LED Indicator",
+                "desc": "Visual confirmation alert sent"
+            },
+            {
+                "name": "Water Resistant",
+                "desc": "Safe for baths, showers & spas"
+            },
+            {
+                "name": "Battery Life Reporting",
+                "desc": "Low battery indication"
+            },
+            {
+                "name": "Resident Check-In",
+                "desc": "Resident check-in capabilities"
+            },
+            {
+                "name": "Easy Install",
+                "desc": "No tools or special wiring needed"
+            }
+        ],
+        "featuresBenefits": [
+            "Simple pull-cord activation: No complex interaction is required for the resident to initiate an alert",
+            "Water resistant design: Can be safely placed in high-moisture environments like bathrooms, baths, and spas where falls are common",
+            "Real-time alert delivery: Alerts are delivered instantly to care staff via the Rythmos® Care Manager.",
+            "LED visual indicator: Reassures the resident by providing visual confirmation that the alert has been sent",
+            "Battery powered: No wiring or power outlet required; uses 2 x AA batteries (included) rated for up to 5 years",
+            "Customizable alert routing: Can be configured to support non-emergency events, including housekeeping requests and maintenance needs."
+        ],
+        "deploymentTip": "Pull cords should be installed in bathrooms, toilets, and other high-risk areas where immediate assistance may be required. Devices must be positioned within easy reach from both seated and floor levels to ensure accessibility in case of a fall. Placement near beds in resident rooms is also recommended. Installations should avoid obstructions and be validated during setup to ensure alerts are reliably delivered to staff.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install in bathrooms, bedrooms\n- Suitable for high-moisture areas"
+            },
+            {
+                "title": "Reachability",
+                "content": "- Accessible from seated or floor\n- Always within emergency reach"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Surface mount (wall or fixture)\n- Tape or single gang box"
+            },
+            {
+                "title": "Environment",
+                "content": "- Wet-area approved\n- Suitable for high-risk fall areas"
+            },
+            {
+                "title": "Power",
+                "content": "- Battery powered (no wiring)\n- 2 × AA batteries included"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- No reconfig. replacement\n- Low battery indication"
+            }
+        ]
+    },
+    {
+        "id": "wander-access-reader",
+        "folder": "Access + Wander Reader",
+        "title": "Rythmos®",
+        "subtitle": "Access + Wander Reader",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Access + Wander Reader is a <span class=\"highlight-orange\">wired access control and wander management reader</span> designed for staff/resident access.",
+        "heroIcons": [
+            "<strong>Controls door access</strong> via maglocks and strikes",
+            "<strong>Enables</strong> proximity detection via <strong>Rythmos®</strong> wearables",
+            "<strong>Triggers</strong> wander and door-related events"
+        ],
+        "detectionCapabilities": [
+            "Access events",
+            "Wander events",
+            "Door state",
+            "Proximity detection"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "4.5 × 4.5 in (W × H)"
+            },
+            {
+                "label": "Input Voltage:",
+                "value": "12-24V DC / 1A"
+            },
+            {
+                "label": "Current Draw:",
+                "value": "50 mA (idle)"
+            },
+            {
+                "label": "Relay Rating:",
+                "value": "24V / 5A DC - 250V / 5A AC"
+            },
+            {
+                "label": "Reader Interface:",
+                "value": "Rythmos Mesh Network"
+            },
+            {
+                "label": "NFC:",
+                "value": "MIFARE Classic"
+            },
+            {
+                "label": "Whitelist Capacity:",
+                "value": "Up to 900 fobs / wearables"
+            },
+            {
+                "label": "Wearable Range:",
+                "value": "1-30 ft (adjustable)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Indoor & outdoor · IP67 rated"
+            },
+            {
+                "label": "Certifications:",
+                "value": "FCC · CSA · UL"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA (over-the-air)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Wander Proximity",
+                "desc": "Resident detection near exit"
+            },
+            {
+                "name": "Door Open Wander",
+                "desc": "Resident detection near opened door"
+            },
+            {
+                "name": "Loitering detection",
+                "desc": "Extended presence near door"
+            },
+            {
+                "name": "Audible Alert",
+                "desc": "Optional onboard buzzer or external sounder"
+            },
+            {
+                "name": "Door Open/Closed",
+                "desc": "State change event"
+            },
+            {
+                "name": "Door Forced",
+                "desc": "Unauthorized opening"
+            }
+        ],
+        "accessFeatures": [
+            "Universal Compatibility: Works with maglocks and electrified strikes",
+            "Proximity Access: Hands-free entry via wearables (1-30 ft range)",
+            "Alternate Entry: Supports keypad, push-button, and motion sensor (REX)",
+            "High Capacity: Supports up to 900 credentials",
+            "Tap to Access: Supports NFC keycards (MIFARE Classic) and fobs",
+            "Mobile Entry: Touchless access using mobile devices",
+            "Status Feedback: LED indicators (Red / Green / Blue)",
+            "Remote Maintenance: OTA firmware updates"
+        ],
+        "deploymentTip": "Access + Wander Readers should be installed at exit doors, entry points, and transitions between monitored zones to support effective wander management and access control. Devices must be positioned to ensure reliable detection of wearables within the intended coverage area.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install at door access points\n- Indoor & outdoor (IP67)"
+            },
+            {
+                "title": "Door Contact",
+                "content": "- Use NC contact for door state\n- Connect only to primary reader"
+            },
+            {
+                "title": "Multi-Reader",
+                "content": "- Use DualIn / DualOut\n- Only primary reader controls lock"
+            },
+            {
+                "title": "Power",
+                "content": "- 12–24V DC (min 1A)\n- PSU must support lock load"
+            },
+            {
+                "title": "Access Inputs",
+                "content": "- Keypad, button, or motion sensor\n- Must use NO dry contact"
+            },
+            {
+                "title": "Environment",
+                "content": "- IP67 rated\n- Use enclosure if exposed"
+            }
+        ]
+    },
+    {
+        "id": "sleep-mat",
+        "folder": "Sleep Mat",
+        "title": "Rythmos®",
+        "subtitle": "Sleep Mat",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Sleep Mat is an <span class=\"highlight-orange\">under-mattress sensor</span> that continuously collects sleep and health data, enabling caregivers to monitor resident wellbeing and detect changes in nighttime behavior.",
+        "heroIcons": [
+            "<strong>Monitors sleep</strong> duration and cycles",
+            "<strong>Tracks heart rate</strong> and respiratory rate",
+            "<strong>Detects snoring</strong> and behavior changes"
+        ],
+        "detectionCapabilities": [
+            "Sleep duration",
+            "Heart rate",
+            "Respiratory",
+            "Movement",
+            "Snoring"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "637 × 190 × 5 mm"
+            },
+            {
+                "label": "Weight:",
+                "value": "350 g"
+            },
+            {
+                "label": "Power:",
+                "value": "5V / 1A USB adapter"
+            },
+            {
+                "label": "Connectivity:",
+                "value": "Wi-Fi (2.4 GHz) · Bluetooth (setup)"
+            },
+            {
+                "label": "Sensor Technology:",
+                "value": "Pneumatic + sound sensors"
+            },
+            {
+                "label": "Installation:",
+                "value": "Under-mattress placement"
+            },
+            {
+                "label": "Whitelist Capacity:",
+                "value": "Up to 900 fobs / wearables"
+            },
+            {
+                "label": "Wearable Range:",
+                "value": "1-30 ft (adjustable)"
+            },
+            {
+                "label": "Compatibility:",
+                "value": "4–15 in mattress thickness"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Sleep Monitoring",
+                "desc": "Continuous tracking of sleep"
+            },
+            {
+                "name": "Health Insights",
+                "desc": "Heart rate and breathing monitoring"
+            },
+            {
+                "name": "Apnea Detection",
+                "desc": "Identifies breathing anomalies"
+            },
+            {
+                "name": "Snoring Detection",
+                "desc": "Tracks snoring and related patterns"
+            },
+            {
+                "name": "Behavior Tracking",
+                "desc": "Detects changes in nighttime activity"
+            },
+            {
+                "name": "Care Visibility",
+                "desc": "Provides data for caregiver"
+            }
+        ],
+        "systemFeatures": [
+            "Automatically syncs data to Rythmos® platform",
+            "Enables long-term trend analysis and care planning",
+            "Supports early detection of health changes",
+            "Provides actionable insights for caregivers",
+            "Integrates with care workflows and alerts",
+            "Automatically starts tracking when resident lies down",
+            "Stores data during network interruptions",
+            "Designed for single-resident tracking",
+            "Works independently of wearables",
+            "Enables baseline behavior profiling"
+        ],
+        "deploymentTip": "The sensor should be installed under the mattress in the primary sleeping area, ensuring full and consistent contact with the mattress surface for accurate data capture. Monitoring should focus on trends over time rather than isolated events to provide meaningful insights into user patterns.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install under mattress\n- Position at chest level"
+            },
+            {
+                "title": "Compatibility",
+                "content": "- Works with 4–15 in thickness\n- Suitable for standard beds"
+            },
+            {
+                "title": "Power",
+                "content": "- Requires 5V / 1A USB power\n- Continuous power required"
+            },
+            {
+                "title": "Connectivity",
+                "content": "- Connect via Wi-Fi (2.4 GHz)\n- Bluetooth used for setup"
+            },
+            {
+                "title": "Cleaning",
+                "content": "- Removable cover is machine washable\n- Ensure cover is fully dry before use"
+            },
+            {
+                "title": "Care",
+                "content": "- Do not use liquids on sensor\n- Keep sensor protected inside"
+            },
+            {
+                "title": "Handling",
+                "content": "- Do not bend, fold, or apply pressure\n- Avoid removing cover unnecessarily"
+            },
+            {
+                "title": "Service",
+                "content": "- Do not attempt to repair or open\n- Contact support for hardware issues"
+            }
+        ]
+    },
+    {
+        "id": "door-window-sensor",
+        "folder": "Waterproof Door&Window",
+        "title": "Rythmos®",
+        "subtitle": "Door & Window Sensor",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Door & Window Sensor is a <span class=\"highlight-orange\">wireless magnetic contact sensor</span> that monitors the open and closed status of doors, windows, and other access points, supporting wander management and facility security.",
+        "heroIcons": [
+            "<strong>Monitors real-time</strong> door/window status",
+            "<strong>Alerts</strong> on open or propped states",
+            "<strong>Supports wander</strong> management"
+        ],
+        "detectionCapabilities": [
+            "Real-time monitoring",
+            "Propped alerts",
+            "Wander integration"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "51 × 24 × 15 mm"
+            },
+            {
+                "label": "Magnet Dimensions:",
+                "value": "30 × 10 × 9 mm"
+            },
+            {
+                "label": "Power Source:",
+                "value": "2 × AAA batteries"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 2–5 years (usage dependent)"
+            },
+            {
+                "label": "Detection Type:",
+                "value": "Magnetic contact (Hall-effect)"
+            },
+            {
+                "label": "Network:",
+                "value": "Rythmos® Mesh Network"
+            },
+            {
+                "label": "Frequency band:",
+                "value": "2.4 GHz"
+            },
+            {
+                "label": "Radio sensitivity:",
+                "value": "−95 dBm"
+            },
+            {
+                "label": "Typical node distance:",
+                "value": "Up to ~20 m between devices"
+            },
+            {
+                "label": "Topology:",
+                "value": "Self-healing mesh (multi-hop communication)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Adhesive or screw mount"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA (over-the-air)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Real-Time Monitoring",
+                "desc": "Tracks door and window state"
+            },
+            {
+                "name": "Propped Door Alerts",
+                "desc": "Detects doors left open"
+            },
+            {
+                "name": "Scheduled Alerts",
+                "desc": "Alerts only during set hours"
+            },
+            {
+                "name": "Wander Integration",
+                "desc": "Supports elopement prevention"
+            },
+            {
+                "name": "Wireless Install",
+                "desc": "No wiring required"
+            },
+            {
+                "name": "Low Maintenance",
+                "desc": "Long battery life"
+            }
+        ],
+        "systemSecurityFeatures": [
+            "Integrates with Rythmos® Care Manager",
+            "Monitors restricted areas and exit points",
+            "Supports geofencing and wander settings",
+            "Supports cabinet and internal access monitoring",
+            "Provides real-time alerts to staff",
+            "OTA firmware updates supported"
+        ],
+        "technicalCapabilities": [
+            "Magnetic sensing: Hall-effect / magneto-resistive detection",
+            "Event-driven architecture: Triggers on state change (open/close/propped)",
+            "Low-power optimization: Dynamic reporting reduces battery usage",
+            "Remote configuration: Adjustable reporting intervals and thresholds"
+        ],
+        "deploymentTip": "Install the sensor on all exit doors and other high-risk areas to ensure effective monitoring of movement and access. It can also be used for cabinets, restricted zones, and internal doors where additional control is required. Alert timing should be configured based on resident schedules to align with daily routines and reduce unnecessary notifications.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install sensor on frame, magnet on moving surface\n- Ensure proper alignment for accurate detection"
+            },
+            {
+                "title": "Environment",
+                "content": "- Indoor use recommended\n- Avoid strong magnetic interference"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Use adhesive for quick install\n- Use screws for permanent mounting"
+            },
+            {
+                "title": "Power",
+                "content": "- 2 × AAA batteries\n- Replaceable, no reconfiguration required"
+            },
+            {
+                "title": "Alignment",
+                "content": "- Maintain correct gap between sensor and magnet\n- Ensure consistent positioning when closed"
+            },
+            {
+                "title": "Conditions",
+                "content": "- Op. temp: −20°C to +50°C\n- Humidity: 0–100% RH (non-condensing)"
+            },
+            {
+                "title": "Constraints",
+                "content": "- Avoid proximity to RF sources\n- Avoid direct sunlight and heating devices"
+            }
+        ]
+    },
+    {
+        "id": "liquid-detection-sensor",
+        "folder": "Liquid Detection Sensor",
+        "title": "Rythmos®",
+        "subtitle": "Liquid Detection Sensor",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Liquid Detection Sensor is a <span class=\"highlight-orange\">wireless device designed to detect liquid presence</span> in indoor environments, supporting both leak detection and incontinence monitoring in resident spaces.",
+        "heroIcons": [
+            "Detects <strong>liquid presence</strong> (water or bodily fluids)",
+            "Triggers alerts on <strong>moisture detection</strong>",
+            "Supports <strong>resident safety</strong> and <strong>facility protection</strong>"
+        ],
+        "detectionCapabilities": [
+            "Liquid presence",
+            "Leaks alerts",
+            "IP67 rated"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "34 × 58 × 18 mm"
+            },
+            {
+                "label": "Power Source:",
+                "value": "2 × AAA batteries (non-replaceable)"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3–5 years (usage dependent)"
+            },
+            {
+                "label": "Detection Method:",
+                "value": "Contact-based (liquid detection pins)"
+            },
+            {
+                "label": "Network:",
+                "value": "Rythmos® Mesh Network"
+            },
+            {
+                "label": "Connectivity Options:",
+                "value": "Wired LAN (Ethernet), WiFi support"
+            },
+            {
+                "label": "Certifications:",
+                "value": "FCC · ISED · CE"
+            },
+            {
+                "label": "Installation:",
+                "value": "Indoor, non-fixed location"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "Over-the-air (OTA)"
+            },
+            {
+                "label": "Management Portal:",
+                "value": "Rythmos® Care Manager (web + mobile)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Liquid Detection",
+                "desc": "Detects water and other liquids"
+            },
+            {
+                "name": "Incontinence Monitoring",
+                "desc": "Detects bed wetting events"
+            },
+            {
+                "name": "Extended Coverage",
+                "desc": "Optional detection rope for larger areas"
+            },
+            {
+                "name": "Wireless Design",
+                "desc": "No wiring required"
+            },
+            {
+                "name": "Rugged Build",
+                "desc": "IP67 rated for wet environments"
+            },
+            {
+                "name": "Low Maintenance",
+                "desc": "Long battery life"
+            }
+        ],
+        "systemFeatures": [
+            "Real-time leak alerts: Immediate notification when liquid reaches detection pins",
+            "Continuous condition monitoring: Hourly status updates even without active events",
+            "Scalable area coverage: Supports rope extension for large or complex spaces",
+            "Event-based intelligence: Triggers only on actual change, reducing noise and false alerts",
+            "Surface-level detection precision: Detects liquid exactly where it accumulates first",
+            "Installation validation: Detects incorrect setup or missing detection components"
+        ],
+        "deploymentTip": "Liquid detection sensors should be installed in areas where leaks or spills are most likely to occur, such as under sinks, near toilets, around water heaters, and along pipes or appliances.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install directly on floor or surface where liquid collects first\n- Position detection pins downward"
+            },
+            {
+                "title": "Detection Setup",
+                "content": "- Place in areas where liquid is likely to accumulate\n- Ensure liquid can reach sensor location"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Use adhesive base for quick install\n- Ensure clean, non-conductive surface"
+            },
+            {
+                "title": "Extended Coverage",
+                "content": "- Use detection rope for large areas or equipment\n- Route along pipes, edges, or surfaces"
+            },
+            {
+                "title": "Environment",
+                "content": "- Suitable for indoor and harsh environments (IP67)\n- Avoid oils, chemicals, and corrosive liquids"
+            },
+            {
+                "title": "Power",
+                "content": "- Internal battery (non-replaceable)\n- No wiring required"
+            }
+        ]
+    },
+    {
+        "id": "smoke-alarm",
+        "folder": "Smoke Alarm",
+        "title": "Rythmos®",
+        "subtitle": "Smoke Alarm",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Smoke Alarm is a <span class=\"highlight-orange\">battery-powered optical smoke detector</span> designed to identify smoldering fires and provide early warning through audible alerts and system notifications.",
+        "heroIcons": [
+            "<strong>Detects smoke</strong> using optical (photoelectric) sensing",
+            "<strong>Triggers audible alarm</strong> and system alert",
+            "<strong>Transmits events</strong> to central monitoring system",
+            "<strong>Monitors device status</strong> and battery health"
+        ],
+        "detectionCapabilities": [
+            "Smoke detection",
+            "85 dB alarm",
+            "10-year battery"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "115 × 50 mm"
+            },
+            {
+                "label": "Sensor Type:",
+                "value": "Optical (photoelectric)"
+            },
+            {
+                "label": "Power Source:",
+                "value": "3V lithium battery (sealed)"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 10 years"
+            },
+            {
+                "label": "Sound Level:",
+                "value": "85 dB(A) at 3 m"
+            },
+            {
+                "label": "Wireless:",
+                "value": "2.4 GHz / RF interconnect"
+            },
+            {
+                "label": "Temperature Range:",
+                "value": "0°C to 40°C"
+            },
+            {
+                "label": "Humidity:",
+                "value": "15%–95% RH"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Optical Detection",
+                "desc": "Sensitive to smoldering fires"
+            },
+            {
+                "name": "Audible Alarm",
+                "desc": "85 dB onboard sounder"
+            },
+            {
+                "name": "10-Year Battery",
+                "desc": "Sealed long-life power"
+            },
+            {
+                "name": "Wireless Interconnect",
+                "desc": "Multiple alarms triggered simultaneously"
+            },
+            {
+                "name": "Test / Hush Button",
+                "desc": "Easy control and maintenance"
+            },
+            {
+                "name": "Environmental Sensing",
+                "desc": "Temperature, humidity, air quality"
+            }
+        ],
+        "systemSecurityFeatures": [
+            "Real-time alerts to Care Manager",
+            "Device self-monitoring and diagnostics",
+            "Low battery and fault reporting",
+            "Centralized monitoring across facility",
+            "No wiring required"
+        ],
+        "alarmSignals": [
+            "Low battery: periodic beep",
+            "Fault: repeated warning signal",
+            "Normal: operates silently",
+            "Alarm: sound + flashing LED"
+        ],
+        "operationMaintenance": [
+            "Performs automatic self-test every ~40 seconds",
+            "Indicates recent alarms via LED memory",
+            "Requires weekly manual testing (Test / Hush button)",
+            "Allows temporary silencing (~10 min hush mode)",
+            "Designed for ~10-year lifecycle"
+        ],
+        "deploymentTip": "Install the device in hallways, bedrooms, and common areas to ensure comprehensive coverage across the facility. Placement should prioritize escape routes to support early detection in critical pathways. For full-area protection, multiple interconnected units should be used to provide consistent and reliable coverage throughout the space.",
+        "installation": [
+            {
+                "title": "Coverage",
+                "content": "- Install on every floor\n- Place near sleeping areas and escape paths"
+            },
+            {
+                "title": "Placement",
+                "content": "- Ceiling mounted (center of room)\n- Minimum 300 mm from walls"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Twist-on base installation\n- Screw-mounted plate included"
+            },
+            {
+                "title": "Power",
+                "content": "- Sealed battery (no replacement)\n- Activated on installation"
+            },
+            {
+                "title": "Avoid",
+                "content": "- Kitchens, bathrooms, high steam areas\n- Air vents, direct sunlight, dust"
+            }
+        ]
+    },
+    {
+        "id": "community-wearable",
+        "folder": "Community Wearable",
+        "title": "Rythmos®",
+        "subtitle": "Community Wearable",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Community Wearable is a <span class=\"highlight-orange\">wireless device</span> designed to provide real-time resident location, safety alerts, and activity data within the Rythmos® mesh network.",
+        "heroIcons": [
+            "Provides <strong>real-time indoor location data</strong>",
+            "Enables <strong>nurse call</strong> via integrated button",
+            "<strong>Detects falls</strong> using onboard accelerometer",
+            "<strong>Tracks activity</strong> and movement patterns"
+        ],
+        "detectionCapabilities": [
+            "Real-time location",
+            "Nurse call",
+            "Fall detection",
+            "Activity tracking"
+        ],
+        "specs": [
+            {
+                "label": "Battery:",
+                "value": "CR2430 coin cell (replaceable)"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3 months"
+            },
+            {
+                "label": "Sensor:",
+                "value": "Accelerometer"
+            },
+            {
+                "label": "Waterproof:",
+                "value": "Yes"
+            },
+            {
+                "label": "Rating:",
+                "value": "IP67"
+            },
+            {
+                "label": "Network:",
+                "value": "Rythmos® Mesh (Wirepas)"
+            },
+            {
+                "label": "Indicator:",
+                "value": "LED visual indicator"
+            },
+            {
+                "label": "Wear Options:",
+                "value": "Wrist or neck"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Real-Time Location",
+                "desc": "Indoor positioning for faster response"
+            },
+            {
+                "name": "Nurse Call",
+                "desc": "One-press alert to staff"
+            },
+            {
+                "name": "Fall Detection",
+                "desc": "Automated alerts via motion sensing"
+            },
+            {
+                "name": "Activity Tracking",
+                "desc": "Step and movement data"
+            },
+            {
+                "name": "Wander Management",
+                "desc": "Proximity-based monitoring"
+            },
+            {
+                "name": "Access Integration",
+                "desc": "Works with doors and access systems"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Real-time alerts to caregivers",
+            "Integration with full Rythmos ecosystem",
+            "Customizable alert logic and thresholds",
+            "Supports infection control and engagement monitoring",
+            "Wireless operation within mesh network"
+        ],
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Wrist band\n- Neck pendant"
+            },
+            {
+                "title": "Setup",
+                "content": "- Pre-configured for mesh network\n- Activated on assignment to resident"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Replace battery as needed\n- Monitor status via Care Manager"
+            },
+            {
+                "title": "Usage",
+                "content": "- Always worn by resident\n- Button accessible for quick alerts"
+            }
+        ]
+    },
+    {
+        "id": "flex-wearable",
+        "folder": "Flex Wearable",
+        "title": "Rythmos®",
+        "subtitle": "Flex Wearable",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Flex Wearable is a <span class=\"highlight-orange\">rechargeable, multi-use wearable</span> designed for continuous resident monitoring, safety, and access. It combines real-time location, nurse call, and fall detection.",
+        "heroIcons": [
+            "Provides <strong>real-time resident location tracking</strong>",
+            "Enables one-press <strong>nurse call alerts</strong>",
+            "Supports automatic <strong>fall detection</strong>",
+            "Collects <strong>health and activity data</strong>"
+        ],
+        "detectionCapabilities": [
+            "Location tracking",
+            "Fall detection",
+            "Activity tracking",
+            "Rechargeable"
+        ],
+        "specs": [
+            {
+                "label": "Power:",
+                "value": "Rechargeable battery (0-100% in ~2 hours)"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3 months (usage dependent)"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "Shower-safe design"
+            },
+            {
+                "label": "Wear Options:",
+                "value": "Wristband or pendant"
+            },
+            {
+                "label": "Interface:",
+                "value": "Soft press button"
+            },
+            {
+                "label": "Indicators:",
+                "value": "LED visual indicator"
+            },
+            {
+                "label": "Security:",
+                "value": "Optional locking band"
+            },
+            {
+                "label": "Maintenance:",
+                "value": "Hot-swappable wearable"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Rechargeable Design",
+                "desc": "Eliminate frequent battery replacement"
+            },
+            {
+                "name": "Flexible Wear Options",
+                "desc": "Supports wrist and pendant use"
+            },
+            {
+                "name": "Integrated Nurse Call",
+                "desc": "One-press alert for immediate response"
+            },
+            {
+                "name": "Automatic Fall Detection",
+                "desc": "ML-based monitoring and alerts"
+            },
+            {
+                "name": "Access Integration",
+                "desc": "Enables proximity-based door access"
+            },
+            {
+                "name": "Continuous Monitoring",
+                "desc": "Tracks movement, activity, and engagement"
+            }
+        ],
+        "systemInsights": [
+            "Real-time location visibility: Enables faster response and staff coordination",
+            "Access control integration: Supports secure and seamless entry",
+            "Centralized resident data: All activity and alerts in one platform",
+            "Engagement & behavior insights: Provides data for care optimization",
+            "Wander management support: Tracks and alerts on resident movement",
+            "Scalable community coverage: Works across entire facility network"
+        ],
+        "installation": [
+            {
+                "title": "Setup",
+                "content": "- Assign device to resident via platform\n- Configure alert and access settings"
+            },
+            {
+                "title": "Charging",
+                "content": "- Recharge using standard charging setup\n- Full charge in ~2 hours"
+            },
+            {
+                "title": "Wearability",
+                "content": "- Choose wrist or pendant configuration\n- Ensure proper fit for continuous wear"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Wipe with soft cloth\n- Monitor battery status via platform"
+            },
+            {
+                "title": "Care",
+                "content": "- Avoid damage to casing or strap\n- Use locking band if required"
+            },
+            {
+                "title": "Service",
+                "content": "- OTA updates supported\n- Managed via Rythmos® platform"
+            }
+        ]
+    },
+    {
+        "id": "plus-wearable",
+        "folder": "Plus Wearable",
+        "title": "Rythmos®",
+        "subtitle": "Plus Wearable",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Plus Wearable is an <span class=\"highlight-orange\">advanced wearable device</span> designed for continuous resident monitoring both inside and outside the community.",
+        "heroIcons": [
+            "Provides <strong>real-time location</strong> tracking",
+            "Enables one-press <strong>nurse call alerts</strong>",
+            "Supports automatic <strong>fall detection</strong>",
+            "Collects <strong>health</strong> and <strong>activity data</strong>"
+        ],
+        "detectionCapabilities": [
+            "GPS + LTE",
+            "Fall detection",
+            "Activity tracking",
+            "Outdoor capable"
+        ],
+        "specs": [
+            {
+                "label": "Power:",
+                "value": "Rechargeable battery (0-100% in ~2 hours)"
+            },
+            {
+                "label": "Connectivity:",
+                "value": "BLE · GPS · LTE"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3 months (usage dependent)"
+            },
+            {
+                "label": "Water Resistance:",
+                "value": "Shower-safe"
+            },
+            {
+                "label": "Wear Options:",
+                "value": "Wristband or pendant"
+            },
+            {
+                "label": "Interface:",
+                "value": "Soft press button"
+            },
+            {
+                "label": "Indicators:",
+                "value": "LED visual indicator"
+            },
+            {
+                "label": "Security:",
+                "value": "Optional locking band"
+            },
+            {
+                "label": "Maintenance:",
+                "value": "Hot-swappable"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Indoor + Outdoor Tracking",
+                "desc": "Seamless location visibility across all environments"
+            },
+            {
+                "name": "GPS & LTE Connectivity",
+                "desc": "Enables tracking beyond facility boundaries"
+            },
+            {
+                "name": "Integrated Nurse Call",
+                "desc": "One-press alert for immediate response"
+            },
+            {
+                "name": "Automatic Fall Detection",
+                "desc": "ML-based monitoring and alerts"
+            },
+            {
+                "name": "Access Integration",
+                "desc": "Enables proximity-based door access"
+            },
+            {
+                "name": "Continuous Monitoring",
+                "desc": "Tracks movement, activity, and engagement"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Full-location visibility: Tracks residents across facility and external environments",
+            "Elopement risk management: Supports detection and response to unauthorized exits",
+            "Real-time alerts & notifications: Immediate alerts for movement, falls, or distress",
+            "Centralized monitoring: All data available in Rythmos® Care Manager",
+            "Behavior & activity insights: Supports care decisions and trend analysis",
+            "Scalable deployment: Works across entire care ecosystem"
+        ],
+        "installation": [
+            {
+                "title": "Setup",
+                "content": "- Assign device via platform\n- Configure GPS and alert settings"
+            },
+            {
+                "title": "Wearability",
+                "content": "- Ensure proper fit (wrist or pendant)\n- Use locking band if required"
+            },
+            {
+                "title": "Charging",
+                "content": "- Recharge regularly (~2 hours full charge)\n- Recharge based on usage and GPS activity"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Wipe with soft cloth\n- Safe for daily wear"
+            },
+            {
+                "title": "Care",
+                "content": "- Avoid physical damage\n- Ensure strap integrity"
+            },
+            {
+                "title": "Service",
+                "content": "- OTA updates supported\n- Remote diagnostics via platform"
+            }
+        ]
+    },
+    {
+        "id": "charging-dock",
+        "folder": "Charging Dock",
+        "title": "Rythmos®",
+        "subtitle": "Charging Dock",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Charging Dock is a <span class=\"highlight-orange\">multi-device charging solution</span> designed to efficiently manage Plus and Flex Wearables. It enables centralized charging, ensuring devices are always ready for continuous resident monitoring.",
+        "heroIcons": [
+            "Charges <strong>multiple wearables</strong> simultaneously",
+            "Provides <strong>visual charge status</strong> via LED indicators",
+            "Supports <strong>daily device rotation</strong> and readiness",
+            "Ensures <strong>continuous device availability</strong> for residents"
+        ],
+        "detectionCapabilities": [],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "45.7 × 20.5 × 138.8 mm"
+            },
+            {
+                "label": "Capacity:",
+                "value": "Up to 5 wearables simultaneously"
+            },
+            {
+                "label": "Compatibility:",
+                "value": "Plus & Flex Wearables"
+            },
+            {
+                "label": "Power:",
+                "value": "24V / 20W adapter"
+            },
+            {
+                "label": "Charging Time:",
+                "value": "~2 hours (0–100%)"
+            },
+            {
+                "label": "Indicators:",
+                "value": "LED status on wearable"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Multi-Device Charging",
+                "desc": "Charge up to five wearables at once"
+            },
+            {
+                "name": "Fast Charging",
+                "desc": "Full charge in approximately 2 hours"
+            },
+            {
+                "name": "Visual Status Feedback",
+                "desc": "LED indicators show charging state"
+            },
+            {
+                "name": "Centralized Charging Station",
+                "desc": "ML-based monitoring and alerts"
+            },
+            {
+                "name": "Plug-and-Play Setup",
+                "desc": "No configuration required"
+            }
+        ],
+        "operationalFeatures": [
+            "Continuous device readiness: Ensures wearables are always charged and available",
+            "Workflow optimization: Supports daily charging routines for caregivers",
+            "Reduced downtime: Minimizes gaps in monitoring due to low battery",
+            "Centralized device handling: Simplifies tracking and management of wearables",
+            "Scalable deployment: Supports multiple devices per station",
+            "Reliable power delivery: Stable charging for consistent performance"
+        ],
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Place on flat, stable surface\n- Locate in staff or charging area"
+            },
+            {
+                "title": "Power",
+                "content": "- Connect using provided 24V adapter\n- Ensure constant power supply"
+            },
+            {
+                "title": "Usage",
+                "content": "- Dock wearables securely for charging\n- Verify LED indicators for charge status"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Wipe dock with dry cloth\n- Keep charging contacts clean"
+            },
+            {
+                "title": "Operation",
+                "content": "- Ensure proper device alignment in dock\n- Monitor charging performance"
+            },
+            {
+                "title": "Care",
+                "content": "- Avoid liquid exposure\n- Do not overload beyond capacity"
+            }
+        ]
+    },
+    {
+        "id": "ai-camera-sensor",
+        "folder": "AI Camera-Based Sensor",
+        "title": "Rythmos®",
+        "subtitle": "AI Camera-Based Sensor",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® AI Camera-Based Sensor is an <span class=\"highlight-orange\">intelligent visual monitoring device</span> designed to enhance resident safety through real-time detection and verification. It combines AI-based analysis with visual context.",
+        "heroIcons": [
+            "Supports <strong>presence detection</strong> and bed exit monitoring",
+            "<strong>Tracks movement</strong> and activity patterns",
+            "Enables <strong>visual event verification</strong>"
+        ],
+        "detectionCapabilities": [
+            "Presence detection",
+            "Bed exit",
+            "Movement analysis"
+        ],
+        "specs": [
+            {
+                "label": "Resolution:",
+                "value": "1920 × 1080 (Full HD)"
+            },
+            {
+                "label": "Lens:",
+                "value": "~110° wide-angle"
+            },
+            {
+                "label": "Pan / Tilt:",
+                "value": "360° horizontal · 90° vertical"
+            },
+            {
+                "label": "Night Vision:",
+                "value": "IR LEDs (up to ~9 m)"
+            },
+            {
+                "label": "Audio:",
+                "value": "Built-in mic & speaker (2-way audio)"
+            },
+            {
+                "label": "Connectivity:",
+                "value": "Wi-Fi 2.4 / 5 GHz"
+            },
+            {
+                "label": "Storage:",
+                "value": "Cloud + optional MicroSD"
+            },
+            {
+                "label": "Power:",
+                "value": "5V / 1A (USB)"
+            },
+            {
+                "label": "Mounting:",
+                "value": "Table or ceiling mount"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "AI-Powered Detection",
+                "desc": "Identifies people, movement, and key events"
+            },
+            {
+                "name": "Low-Light Performance",
+                "desc": "Accurate detection even in dark environments"
+            },
+            {
+                "name": "Visual Event Verification",
+                "desc": "Confirms falls or incidents when needed"
+            },
+            {
+                "name": "Privacy Controls",
+                "desc": "ML-based monitoring and alerts"
+            },
+            {
+                "name": "360° Coverage",
+                "desc": "Full room visibility with pan-tilt functionality"
+            },
+            {
+                "name": "Audio Interaction",
+                "desc": "Two-way communication capability"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Real-time monitoring & alerts: Immediate detection and response to events",
+            "Centralized visibility: Managed via Rythmos® platform",
+            "False alarm reduction: AI + sensor fusion improves detection accuracy",
+            "Context-aware insights: Adds visual confirmation to sensor data",
+            "Care workflow integration: Supports fall detection and monitoring systems",
+            "Scalable deployment: Supports multiple rooms and environments"
+        ],
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Position for full room visibility\n- Ensure clear line of sight to bed and activity areas"
+            },
+            {
+                "title": "Power",
+                "content": "- Requires constant 5V / 1A USB power"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Place on flat surface or mount to ceiling\n- Secure mounting for stable operation"
+            },
+            {
+                "title": "Connectivity",
+                "content": "- Connect to Wi-Fi (2.4 / 5 GHz)\n- Ensure stable network coverage"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Clean lens regularly for clear image quality\n- OTA updates supported"
+            },
+            {
+                "title": "Operation",
+                "content": "- Avoid blocking camera view\n- Ensure unobstructed rotation"
+            }
+        ]
+    },
+    {
+        "id": "wireless-door-lock",
+        "folder": "Wireless Door Lock",
+        "title": "Rythmos®",
+        "subtitle": "Wireless Door Lock",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Wireless Door Lock is a smart <span class=\"highlight-orange\">access control solution</span> designed for seamless and secure entry in resident and staff environments. It enables keyless access using wearables, mobile devices, and NFC credentials.",
+        "heroIcons": [
+            "Enables <strong>secure, touch-free entry</strong>",
+            "Supports <strong>wearable proximity access</strong>",
+            "Provides <strong>LED and buzzer feedback</strong>",
+            "<strong>Configurable unlock timing</strong>"
+        ],
+        "detectionCapabilities": [
+            "Keyless entry",
+            "Multi-access",
+            "NFC + BLE"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions (handle):",
+                "value": "148 × 25 mm"
+            },
+            {
+                "label": "Dimensions (base):",
+                "value": "68 × 68 mm"
+            },
+            {
+                "label": "Power Source:",
+                "value": "4 × AA batteries"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3 months"
+            },
+            {
+                "label": "Access Methods:",
+                "value": "BLE · NFC · Mobile"
+            },
+            {
+                "label": "Door Thickness:",
+                "value": "30–70 mm"
+            },
+            {
+                "label": "Network:",
+                "value": "Rythmos® Mesh (Wirepas)"
+            },
+            {
+                "label": "Installation:",
+                "value": "Standard interior doors"
+            },
+            {
+                "label": "Indicator:",
+                "value": "LED + buzzer feedback"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Keyless Entry",
+                "desc": "Wearable-based access"
+            },
+            {
+                "name": "Multi-Access Support",
+                "desc": "NFC, mobile, wearables"
+            },
+            {
+                "name": "Smart Unlock Control",
+                "desc": "Adjustable timing and range"
+            },
+            {
+                "name": "Visual & Audible Feedback",
+                "desc": "LED and buzzer indicators"
+            },
+            {
+                "name": "Flexible Configuration",
+                "desc": "Multiple modes and settings"
+            },
+            {
+                "name": "Universal Fit",
+                "desc": "Fits standard interior doors"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Real-time access events: Tracks all entry activity across the system in real time",
+            "Configurable access control: Customize permissions, schedules, and access levels",
+            "Integration with workflows: Supports staff, resident, and operational access processes",
+            "Centralized management: All locks managed via Rythmos® Care Manager platform",
+            "Audit & activity tracking: Maintains detailed logs for security and compliance needs",
+            "Secure wireless operation: Encrypted BLE communication ensures safe access control"
+        ],
+        "deploymentTip": "Secure, touch-free door access using wearables, NFC, or mobile credentials. LED and buzzer feedback confirm lock status, while configurable unlock timing, proximity range, and operating modes support flexible access control across resident rooms, med rooms, and staff areas.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install on standard interior doors\n- Ensure proper alignment of handle"
+            },
+            {
+                "title": "Compatibility",
+                "content": "- Fits doors 30–70 mm thickness\n- Supports left and right door config"
+            },
+            {
+                "title": "Power",
+                "content": "- Battery powered (4 × AA)\n- No wiring required"
+            },
+            {
+                "title": "Setup",
+                "content": "- Configure via Rythmos® platform\n- Adjust unlock and BLE settings"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Replace batteries as needed\n- Monitor battery status via platform"
+            },
+            {
+                "title": "Care",
+                "content": "- Avoid mechanical damage\n- Ensure proper operation of latch"
+            },
+            {
+                "title": "Service",
+                "content": "- OTA firmware updates supported\n- Managed remotely via platform"
+            }
+        ]
+    },
+    {
+        "id": "secure-locking-band",
+        "folder": "Secure Locking Band",
+        "title": "Rythmos®",
+        "subtitle": "Secure Locking Band",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Secure Locking Band is a <span class=\"highlight-orange\">safety accessory</span> designed to ensure continuous wearable usage for at-risk residents. It prevents easy removal while maintaining comfort and usability in daily care environments.",
+        "heroIcons": [
+            "<strong>Secures wearable device</strong> to at-risk residents",
+            "<strong>Prevents unauthorized removal</strong> of device",
+            "<strong>Ensures continuous monitoring</strong> compliance",
+            "Requires <strong>magnetic key</strong> for removal"
+        ],
+        "detectionCapabilities": [
+            "Secure wearability",
+            "Controlled removal",
+            "Waterproof"
+        ],
+        "capabilities": [
+            {
+                "name": "Secure Wearability",
+                "desc": "Staying fixed for monitoring"
+            },
+            {
+                "name": "Controlled Removal",
+                "desc": "Unlocks only with magnetic tool"
+            },
+            {
+                "name": "Waterproof Design",
+                "desc": "Safe for shower and daily hygiene routines"
+            },
+            {
+                "name": "Adjustable Fit",
+                "desc": "Accommodates different sizes"
+            },
+            {
+                "name": "Comfort Material",
+                "desc": "Flexible band for long-term wear"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Continuous device compliance: Ensures residents remain connected to monitoring systems",
+            "Supports high-risk residents: Ideal for wander risk and fall monitoring scenarios",
+            "Reduces device loss: Prevents removal or misplacement of wearables",
+            "Caregiver-controlled access: Only staff can remove device when required"
+        ],
+        "installation": [
+            {
+                "title": "Setup",
+                "content": "- Attach band securely to wearable\n- Adjust size for proper wrist fit"
+            },
+            {
+                "title": "Locking",
+                "content": "- Engage locking mechanism fully\n- Verify secure closure"
+            },
+            {
+                "title": "Removal",
+                "content": "- Use magnetic unlocking tool only\n- Keep tool accessible to staff"
+            },
+            {
+                "title": "Cleaning",
+                "content": "- Waterproof — suitable for regular washing\n- Wipe or rinse as needed"
+            },
+            {
+                "title": "Care",
+                "content": "- Check band integrity regularly\n- Ensure locking mechanism functions properly"
+            },
+            {
+                "title": "Usage",
+                "content": "- Avoid excessive force or bending\n- Store unlocking tool safely"
+            }
+        ]
+    },
+    {
+        "id": "door-bell",
+        "folder": "Door Bell",
+        "title": "Rythmos®",
+        "subtitle": "Door Bell",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Door Bell is a wireless <span class=\"highlight-orange\">visitor notification solution</span> built on the Rythmos® wearable platform. It uses a mounted push-button to alert staff when someone is at a secured entrance or door.",
+        "heroIcons": [
+            "Triggers <strong>visitor notification alert</strong>",
+            "<strong>Routes alerts</strong> through Rythmos® mesh network",
+            "<strong>Identifies specific entry</strong> location",
+            "Supports <strong>managed visitor workflows</strong>"
+        ],
+        "detectionCapabilities": [
+            "Visitor alerts",
+            "One-press trigger",
+            "Wireless install"
+        ],
+        "specs": [
+            {
+                "label": "Power Source:",
+                "value": "CR2430 coin cell battery"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 5 months (usage dependent)"
+            },
+            {
+                "label": "Indicators:",
+                "value": "LED visual indicator"
+            },
+            {
+                "label": "Mounting:",
+                "value": "Surface-mounted enclosure"
+            },
+            {
+                "label": "Network:",
+                "value": "Rythmos® Mesh (Wirepas)"
+            },
+            {
+                "label": "Management:",
+                "value": "Care Manager (web + mobile)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Visitor Notification",
+                "desc": "Staff alerting when someone is ringing"
+            },
+            {
+                "name": "Simple Interaction",
+                "desc": "Single button press to trigger alert"
+            },
+            {
+                "name": "Location Awareness",
+                "desc": "Identifies specific door or entry point"
+            },
+            {
+                "name": "Wireless Deployment",
+                "desc": "No wiring required for installation"
+            },
+            {
+                "name": "Low Maintenance",
+                "desc": "Battery-powered and easy to manage"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Real-time alert delivery: Immediate notification to staff devices",
+            "Entry workflow support: Helps manage controlled access points",
+            "Centralized visibility: All alerts tracked in Rythmos® Care Manager platform",
+            "Event logging: Maintains history of visitor activity",
+            "Scalable deployment: Supports multiple doors and entry points",
+            "Reliable system integration: Supports multiple doors and entry points"
+        ],
+        "deploymentTip": "Button press triggers an alert that is transmitted through the Rythmos® mesh network to the Care Manager, notifying staff of a visitor at the door.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Install near doors or secured entries\n- Position within easy reach"
+            },
+            {
+                "title": "Environment",
+                "content": "- Indoor use recommended\n- Avoid direct exposure to moisture"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Mount enclosure to wall or surface\n- Ensure stable and secure placement"
+            },
+            {
+                "title": "Battery",
+                "content": "- Replace batteries as needed\n- Monitor battery status via platform"
+            },
+            {
+                "title": "Cleaning",
+                "content": "- Wipe with dry cloth\n- Avoid liquids entering device"
+            },
+            {
+                "title": "Care",
+                "content": "- Ensure button responsiveness\n- Check LED functionality"
+            }
+        ]
+    },
+    {
+        "id": "asset-tags",
+        "folder": "Asset Tags",
+        "title": "Rythmos®",
+        "subtitle": "Asset Tags",
+        "ref": "Technical Specification & Installation Reference · Rev 2026",
+        "heroDescription": "Rythmos® Asset Tags are compact <span class=\"highlight-orange\">wireless tracking devices</span> designed to monitor the location and movement of mobile equipment across a facility. They provide real-time visibility of critical assets such as wheelchairs, med carts, lifts, and medical devices.",
+        "heroIcons": [
+            "Provides <strong>real-time asset visibility</strong>",
+            "<strong>Tracks movable equipment</strong> across facility",
+            "<strong>Reduces search time</strong> for critical resources",
+            "<strong>IP67-rated</strong> for all environments"
+        ],
+        "detectionCapabilities": [
+            "Asset tracking",
+            "Movement alerts",
+            "Waterproof"
+        ],
+        "specs": [
+            {
+                "label": "Dimensions:",
+                "value": "52.8 × 35.9 × 5.8 mm"
+            },
+            {
+                "label": "Weight:",
+                "value": "7.5 g (excluding battery)"
+            },
+            {
+                "label": "Power Source:",
+                "value": "CR3032 coin cell battery"
+            },
+            {
+                "label": "Battery Life:",
+                "value": "Up to 3 years average use"
+            },
+            {
+                "label": "Mesh Technology:",
+                "value": "Wirepas Mesh 2.4 GHz"
+            },
+            {
+                "label": "Wireless IC:",
+                "value": "Nordic nRF52832"
+            },
+            {
+                "label": "Ingress Protection:",
+                "value": "IP67 waterproof/dustproof"
+            },
+            {
+                "label": "Mounting:",
+                "value": "Adhesive, screws, or optional bracket"
+            },
+            {
+                "label": "Firmware Updates:",
+                "value": "OTA (over-the-air)"
+            }
+        ],
+        "capabilities": [
+            {
+                "name": "Real-Time Tracking",
+                "desc": "Tracks mobile assets in the community"
+            },
+            {
+                "name": "Ultra-Thin Design",
+                "desc": "Easy placement on equipment"
+            },
+            {
+                "name": "Flexible Mounting",
+                "desc": "Supports adhesive, screw, or bracket install"
+            },
+            {
+                "name": "Long Battery Life",
+                "desc": "Up to 3 years of operation"
+            },
+            {
+                "name": "Waterproof Construction",
+                "desc": "IP67-rated for medical and facility areas"
+            },
+            {
+                "name": "Scalable Deployment",
+                "desc": "Supports large-scale mesh tracking"
+            }
+        ],
+        "systemSafetyFeatures": [
+            "Centralized asset visibility: Locate equipment through Care Manager platform",
+            "Workflow optimization: Reduces time spent searching for devices",
+            "Real-time status updates: Continuous reporting through mesh network",
+            "Wireless communication: Encrypted mesh networking for reliable operation",
+            "Facility-wide coverage: Supports dense indoor tracking deployments",
+            "Medical environment ready: Designed for hospitals, care communities, and clinics"
+        ],
+        "deploymentTip": "Ideal for tracking high-value and frequently moved equipment such as wheelchairs, med carts, lifts, and medical devices across hospitals, senior living communities, and clinical care environments. Deploy throughout the facility to improve asset visibility, reduce search time, and support operational efficiency.",
+        "installation": [
+            {
+                "title": "Placement",
+                "content": "- Mount directly on tracked equipment\n- Ensure secure attachment to surface"
+            },
+            {
+                "title": "Power",
+                "content": "- CR3032 replaceable coin cell battery"
+            },
+            {
+                "title": "Mounting",
+                "content": "- Use adhesive, screws, or mounting bracket\n- Optional colored plugs available for identification"
+            },
+            {
+                "title": "Environment",
+                "content": "- Indoor and wet-cleaning environments supported\n- IP67-rated for dust and water protection"
+            },
+            {
+                "title": "Maintenance",
+                "content": "- Replace CR3032 battery as needed\n- Inspect mounting stability periodically"
+            },
+            {
+                "title": "Cleaning",
+                "content": "- Can be wiped or washed down safely\n- OTA updates supported"
+            }
+        ]
+    }
 ]
