@@ -203,7 +203,7 @@ body {
 .detection-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 32px;
     line-height: 100%;
     color: #01203E;
     text-transform: uppercase;
@@ -239,7 +239,7 @@ body {
 .detection-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 100%;
     color: #1C3A6B;
 }
